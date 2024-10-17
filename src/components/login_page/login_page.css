@@ -1,0 +1,30 @@
+.Login-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    background-image: repeating-linear-gradient(45deg, #d65555 25%, transparent 25%, transparent 75%, #d34d4d 75%, #d35252), 
+                      repeating-linear-gradient(45deg, #d65555 25%, #f7f2d4 25%, #f7f7d4 75%, #d34d4d 75%, #d35252);
+    
+
+    background-position: 0 0, 40px 40px;
+    background-size: 80px 80px;
+    height: 100vh;
+    width: 100%;
+
+}
+
+#form-container{
+    width: 12rem;
+    padding: 4rem 4rem 0 4rem;
+
+    border: solid rgb(228, 228, 228) 4px;
+    border-radius: 10rem;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8); /* Soft shadow */
+
+}
