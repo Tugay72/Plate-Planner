@@ -1,0 +1,23 @@
+.navbar {
+    background: #652727;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+.logo {
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    padding: 0 2rem 0 1rem;
+}
+
+.nav-labels {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-label {
+    color: #ECF0F1;
+    font-size: 1rem;
+    cursor: pointer;
+}

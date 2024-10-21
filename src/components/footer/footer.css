@@ -1,0 +1,33 @@
+.footer {
+    background-color: #652727; /* Footer background */
+    color: #ECF0F1; /* Footer text color */
+    text-align: center; /* Center the footer text */
+    position: relative; /* Keep the footer fixed */
+    bottom: 0; /* Align to the bottom */
+    padding: 0; /* Footer padding */
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-link {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 1rem;
+}
