@@ -1,4 +1,4 @@
-.homepage {
+.meal-prep-main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,22 +8,17 @@
     min-height: 100vh;
 }
 
-.carousel-conteiner {
-    width: 720px;
-    height: 240px;
-
-    margin: 8rem 0 4rem 0;
-
-    border: 2px solid rgb(41, 41, 41);
-    box-shadow: 0 4px 10px rgba(22, 22, 22, 0.8);
-}
-
-.page-container{
+.meal-prep-page-container {
     width: 1280px;
-    height: 1280px;
-
-    margin: 6rem 0 8rem 0;
+    height: fit-content;
+    min-height: 480px;
+    
+    margin: 4rem 0 8rem 0;
     padding: 1rem 2rem 1rem 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 
     font-family: 'Courier New', Courier, monospace;
 
@@ -40,24 +35,22 @@
 
 }
 
-.description-container {
-    padding: 1rem 2rem 1rem 2rem;
+.ingredients-selection-container{
+    width: 480px;
 
-
-    background-color: aliceblue;
-    border-radius: 1rem;
-    border: 1px solid rgb(41, 41, 41);
-    box-shadow: 0 4px 10px rgba(22, 22, 22, 0.8);
-
-    color: rgb(20, 20, 20);
-}
-
-.page-container .cards-container{
-    padding-top: 12rem;
+    margin: 4rem 2rem 4rem 5rem;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 0.6rem;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(22, 22, 22, 0.8);
+    background-color: rgb(255, 255, 255);
+
 }
+
+.ingredients-selection-container .ant-input-number-handler-wrap {
+    display: none;
+  }

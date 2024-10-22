@@ -1,6 +1,4 @@
 .home-card{
-    width: fit-content;
-    height: fit-content;
 
     margin: 4rem 2rem 4rem 0;
 
@@ -15,4 +13,36 @@
 .home-card:hover{
     border: 2px solid #ff822f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin: 4rem 0 0 0;
+
+}
+
+.buttons-container-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 4rem;
+
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.ant-btn-primary{
+    width: 8rem;
+
+    background-color: rgb(27, 139, 27);
+}
+
+.ant-btn-primary:hover{
+    background-color: rgb(116, 170, 116) !important;
 }

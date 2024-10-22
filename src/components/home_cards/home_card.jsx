@@ -9,13 +9,21 @@ const HomeCard = ({title = 'Title', description = 'Description', buttons = []}) 
                 title={title}
                 style={{
                     width: 320,
-                    height: 480
+                    height: 560
                 }}
                 >
                 <p>{description}</p>
-                <div className="buttons-container">
+                <div 
+                    className={buttons.length > 2 ? 'buttons-container-grid' : 'buttons-container-center'}
+                    style={buttons.length > 1 ? {paddingTop: '0'} : {paddingTop: '3rem'}}
+                >
+                    
                     {buttons.map((btn, index) => (
-                        <Button key={index} onClick={btn.onClick}>
+                        <Button 
+                            type = 'primary' 
+                            key={index} 
+                            onClick={btn.onClick}
+                        >
                             {btn.label}
                         </Button>
                     ))}
