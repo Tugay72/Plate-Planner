@@ -2,7 +2,7 @@ import './meal_prep.css';
 import foodData from '../../data/food_and_calories.json'
 
 import React, {useState, useEffect} from 'react';
-import { Form, InputNumber, Button, Select, Empty , message } from 'antd';
+import { Form, InputNumber, Button, Select, Empty, Descriptions , message } from 'antd';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 
 import Navbar from '../../components/navbar/navbar';
@@ -11,9 +11,11 @@ import Footer from '../../components/footer/footer';
 
 const { Option } = Select;
 
+
 const MealPrep = () => {
     const [foodItems, setFoodItems] = useState([]);
     const [selectedIngredients, setSelectedIngredients] = useState([]);
+    const [totalCalories, setTotalCalories] = useState(0);
 
     // Load the data into state
     useEffect(() => {
@@ -22,13 +24,19 @@ const MealPrep = () => {
 
     // Submit ingredients
     const onFinish = async (values) => {
+        setTotalCalories(0);
         const newSelectedIngredients = values.ingredients.map(item => {
         const foodItem = foodItems.find(food => food.FoodItem === item.ingredient);
-        return {
-            FoodItem: item.ingredient,
-            Grammage: item.gram,
-            Cals_per100grams: foodItem ? foodItem.Cals_per100grams : null,
-        };
+            
+            const calories = Math.round((parseInt(foodItem.Cals_per100grams) / 100 * item.gram));
+            setTotalCalories((prevTotalCalories) => prevTotalCalories + calories);
+
+            return {
+                key: item.ingredient,
+                FoodItem: item.ingredient,
+                Grammage: item.gram,
+                Calories: foodItem ? calories : null,
+            };
         });
 
         setSelectedIngredients(newSelectedIngredients);
@@ -109,8 +117,40 @@ const MealPrep = () => {
                     </Form>
                 </div>
                 <div className='ingredients-selection-container'>
-                    <h1>Here is your meal!</h1>
-                    <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+                    <>
+                    <h1>Selected Ingredients!</h1>
+                        {selectedIngredients.length > 0 ? (
+                            <>
+                                <Descriptions 
+                                    bordered 
+                                    layout="vertical"
+                                    style={{
+                                        marginTop: '2rem',
+                                    }}
+                                >
+                                    {selectedIngredients.map((ingredient, index) => (
+                                        <Descriptions.Item 
+                                            key={index} 
+                                            label={ingredient.FoodItem} 
+                                            style={{ 
+                                                width: 140, 
+                                                height: 70,
+                                                padding: '0.5rem',
+                                                
+                                            }}>
+                                            <div>Grams: {ingredient.Grammage}g</div>
+                                            <div>Calories: {ingredient.Calories}</div>
+                                        </Descriptions.Item>
+                                ))}
+                                </Descriptions>
+                                <h3 style={{paddingTop: '2rem'}}>Total Calories: {totalCalories}</h3>
+                            </>
+                            ) : (
+                            <>
+                                <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+                            </>
+                        )}
+                    </>
                 </div>
             </div>
             <Footer />          

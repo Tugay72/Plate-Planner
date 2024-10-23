@@ -48,7 +48,7 @@ export default function LoginPage () {
       };
 
     return (
-        <div className="Login-main">
+        <div className="login-main">
             {contextHolder}
             <span id="form-container">
                 <Form

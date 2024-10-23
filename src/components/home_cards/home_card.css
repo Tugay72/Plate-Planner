@@ -15,7 +15,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.buttons-container-center{
+.home-card .buttons-container-center{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
 
 }
 
-.buttons-container-grid{
+.home-card .buttons-container-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
@@ -37,12 +37,12 @@
 
 }
 
-.ant-btn-primary{
+.home-card .ant-btn-primary{
     width: 8rem;
 
     background-color: rgb(27, 139, 27);
 }
 
-.ant-btn-primary:hover{
+.home-card .ant-btn-primary:hover{
     background-color: rgb(116, 170, 116) !important;
 }
