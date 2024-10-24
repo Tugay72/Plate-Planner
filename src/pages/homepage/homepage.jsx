@@ -67,10 +67,10 @@ const Homepage = () => {
                         title="Pre-Built Meals" 
                         description="Need some inspiration? Our pre-built meal library is packed with a variety of expertly crafted meals, complete with detailed calorie counts and nutritional breakdowns. Whether you're looking for a quick breakfast, a balanced lunch, or a hearty dinner, you'll find meals that cater to different dietary preferences and goals. Each meal is designed by nutrition experts, ensuring a healthy balance of macros and delicious flavor. Perfect for those days when you want convenience without compromising on nutrition."
                          buttons={[
-                            { label: 'Breakfast', onClick: () => navigate('/pre_builds') },
-                            { label: 'Lunch', onClick: () => navigate('/pre_builds') },
-                            { label: 'Dinner', onClick: () => navigate('/pre_builds') },
-                            { label: 'Snacks', onClick: () => navigate('/pre_builds') }
+                            { label: 'Breakfast', onClick: () => navigate('/pre_builds', { state: { type: 'breakfast' } }) },
+                            { label: 'Lunch', onClick: () => navigate('/pre_builds', { state: { type: 'lunch' } }) },
+                            { label: 'Dinner', onClick: () => navigate('/pre_builds', { state: { type: 'dinner' } }) },
+                            { label: 'Snacks', onClick: () => navigate('/pre_builds', { state: { type: 'snacks' } }) }
                         ]}
                     />
                     <HomeCard 

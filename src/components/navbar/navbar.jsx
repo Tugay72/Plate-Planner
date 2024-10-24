@@ -17,10 +17,7 @@ const Navbar = () => {
 
   const menu2 = (
     <Menu>
-      <Menu.Item onClick={() => navigate('/pre_builds')}>Breakfast</Menu.Item>
-      <Menu.Item onClick={() => navigate('/pre_builds')}>Lunch</Menu.Item>
-      <Menu.Item onClick={() => navigate('/pre_builds')}>Dinner</Menu.Item>
-      <Menu.Item onClick={() => navigate('/pre_builds')}>Snacks</Menu.Item>
+      <Menu.Item onClick={() => navigate('/pre_builds')}>Random Meal</Menu.Item>
     </Menu>
   );
 

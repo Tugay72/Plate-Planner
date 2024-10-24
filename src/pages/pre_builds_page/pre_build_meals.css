@@ -1,0 +1,54 @@
+.pre-builds-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(253, 234, 196);
+    min-height: 100vh;
+}
+
+.pre-builds-page-container {
+    width: 720px;
+    height: fit-content;
+    min-height: 540px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10rem 0 14rem 0;
+    padding: 1rem 2rem 1rem 2rem;
+
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    background-image: repeating-linear-gradient(45deg, #d65555 25%, transparent 25%, transparent 75%, #d34d4d 75%, #d35252), 
+                      repeating-linear-gradient(45deg, #d65555 25%, #f7f2d4 25%, #f7f7d4 75%, #d34d4d 75%, #d35252);
+    background-position: 0 0, 40px 40px;
+    background-size: 80px 80px;
+
+    border-radius: 1rem;
+    border: 2px solid rgb(41, 41, 41);
+    box-shadow: 0 4px 10px rgba(22, 22, 22, 0.8);
+
+}
+
+.pre-build-container{
+    width: 480px;
+    min-height: 440px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    border-radius: 0.6rem;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(22, 22, 22, 0.8);
+    background-color: rgb(255, 255, 255);
+
+}
