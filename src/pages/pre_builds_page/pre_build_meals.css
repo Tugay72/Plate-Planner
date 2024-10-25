@@ -9,15 +9,14 @@
 }
 
 .pre-builds-page-container {
-    width: 720px;
-    height: fit-content;
+    width: 1440px;
     min-height: 540px;
     
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 
-    margin: 10rem 0 14rem 0;
+    margin: 4rem 0 14rem 0;
     padding: 1rem 2rem 1rem 2rem;
 
 
@@ -37,13 +36,18 @@
 }
 
 .pre-build-container{
-    width: 480px;
-    min-height: 440px;
+    width: 960px;
+    min-height: 480px;
+
+    margin: 4rem 0 4rem 0;
     padding: 2rem;
 
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 4rem;
     align-items: center;
+    justify-content: center;
     gap: 4rem;
 
     border-radius: 0.6rem;
@@ -51,4 +55,22 @@
     box-shadow: 0 4px 10px rgba(22, 22, 22, 0.8);
     background-color: rgb(255, 255, 255);
 
+}
+
+.pre-builds-main-container .ant-btn {
+    width: 240px;
+    height: 48px;
+
+    background-color: rgb(27, 139, 27);
+
+    margin-top: 4rem;
+}
+
+.pre-builds-main-container .ant-btn-primary:hover{
+    background-color: rgb(116, 170, 116) !important;
+}
+
+.pre-builds-main-container .ant-card{
+    width: 920px;
+    min-height: 120px;
 }

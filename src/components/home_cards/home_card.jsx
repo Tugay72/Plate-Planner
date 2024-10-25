@@ -12,10 +12,10 @@ const HomeCard = ({title = 'Title', description = 'Description', buttons = []}) 
                     height: 560
                 }}
                 >
-                <p>{description}</p>
+                <p style={{minHeight: '300px'}}>{description}</p>
                 <div 
                     className={buttons.length > 2 ? 'buttons-container-grid' : 'buttons-container-center'}
-                    style={buttons.length > 1 ? {paddingTop: '0'} : {paddingTop: '3rem'}}
+                    
                 >
                     
                     {buttons.map((btn, index) => (
