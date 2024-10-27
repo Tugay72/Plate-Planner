@@ -78,19 +78,19 @@ Ant Design for UI components.
 Project Link: https://github.com/Tugay72/Plate-Planner
 
 ## Images
-![Login Page](github_assets/login_page)
+![Login Page](github_assets/login_page.png)
 
 
-![Homepage](github_assets/homepage) 
+![Homepage](github_assets/home_page.png) 
 
 
-![Meal Preperation Page](github_assets/meal_prep_page) 
+![Meal Preperation Page](github_assets/meal_prep_page.png) 
 
 
-![Pre Builds](github_assets/pre_builds_page) 
+![Pre Builds](github_assets/pre_builds_page.png) 
 
 
-![Bmi Calculator](github_assets/bmi_page) 
+![Bmi Calculator](github_assets/bmi_page.png) 
 
 ## Notes:
 - **Adjustments:** Modify the installation and usage instructions based on the actual setup for your project, especially if you're using a specific framework or technology stack.
