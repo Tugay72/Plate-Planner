@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Meal Master
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Meal Master** is a meal planning app designed to help users make informed dietary choices. Users can create custom meals or explore a library of pre-built options, each complete with detailed calorie counts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact Information](#contact-information)
+- [Images](#images)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Meal Master empowers users to take control of their nutrition by allowing them to:
+- Create personalized meals with customized ingredients and portion sizes.
+- Browse pre-built meals designed by nutrition experts, providing quick and balanced options for any time of day.
+- Track detailed nutrition information, including calorie counts and macronutrient breakdowns, to support diverse health and fitness goals.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Custom Meal Creation:** Choose from a wide range of ingredients and adjust portion sizes to suit your preferences.
+- **Pre-Built Meals Library:** Access a curated collection of ready-made meals with ingredient and preperation infromation.
+- **Nutrition Tracking:** See calories for each meal.
+- **User-Friendly Interface:** Intuitive design for easy meal planning and tracking.
+- **Responsive Design:** Optimized for desktop and mobile use.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tugay72/Hotel-Management-System.git
+2. Navigate to the project directory:
+   ```bash
+   cd Hotel-Management-System
+3. Install dependencies (if applicable):
+   ```bash
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+- **Creating Custom Meals:** Choose ingredients, adjust portion sizes, and see real-time calorie information.
+- **Browsing Pre-Built Meals:** Find ready-to-go meal options complete with calorie breakdowns.
+- **Tracking Nutrition:** Access an easy-to-read breakdown of calories for each meal to align with fitness or dietary goals.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Contributing
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature-branch
+3. Commit your changes:
+   ```bash
+   git commit -m "Add some feature"
+4. Push to the branch:
+   ```bash
+   git push origin feature-branch
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5.Create a new Pull Request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License) - see the LICENSE file for details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgments
+Ant Design for UI components.
+**DataSets:** 
+- Pre-Builds Page: https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images
+- Meal-Prep Page: https://www.kaggle.com/datasets/kkhandekar/calories-in-food-items-per-100-grams/data
 
-## Learn More
+## Contact Information
+Project Link: https://github.com/Tugay72/Plate-Planner
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Images
+![Login Page](github_assets/login_page)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![Homepage](github_assets/homepage) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![Meal Preperation Page](github_assets/meal_prep_page) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![Pre Builds](github_assets/pre_builds_page) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+![Bmi Calculator](github_assets/bmi_page) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Notes:
+- **Adjustments:** Modify the installation and usage instructions based on the actual setup for your project, especially if you're using a specific framework or technology stack.
+- **Licensing and Acknowledgments:** Creative Commons NonCommercial (CC BY-NC)
+- **Data**: The actively used data on the Pre-Builds page is 10% of the total data and is local.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to let me know if you need any more modifications or additions!
