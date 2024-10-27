@@ -27,7 +27,7 @@ Meal Master empowers users to take control of their nutrition by allowing them t
 ## Features
 
 - **Custom Meal Creation:** Choose from a wide range of ingredients and adjust portion sizes to suit your preferences.
-- **Pre-Built Meals Library:** Access a curated collection of ready-made meals with ingredient and preperation infromation.
+- **Pre-Built Meals Library:** Access a curated collection of ready-made meals with ingredient and preparation infromation.
 - **Nutrition Tracking:** See calories for each meal.
 - **User-Friendly Interface:** Intuitive design for easy meal planning and tracking.
 - **Responsive Design:** Optimized for desktop and mobile use.
